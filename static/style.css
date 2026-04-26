@@ -1,0 +1,219 @@
+.yellow{
+    background-color: #fcde2e !important;
+    height: 50vh !important;
+}
+.my-btn{
+     background-color: #fcde2e;
+}
+.bg-black{
+ background-color: #fcde2e;
+}
+.star {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.active, .star:hover {
+  color: #ffc107; /* Gold color */
+}
+
+.myh1{
+    color: #fcde2e;
+}
+.checked {
+  color: rgb(255, 174, 0) !important;
+}
+.bg-yellow{
+background: linear-gradient(-135deg, #fcda1e, #fdd833 ,#fad51c,#ffe448 );
+padding: 2rem;
+border-radius: 2rem;
+margin: 1rem;
+
+}
+
+#education {
+    padding: 20px;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Vertical Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.timeline-item {
+    padding: 10px 10px 10px 50px;
+    position: relative;
+    background-color: inherit;
+}
+
+/* Dots on the timeline */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 14px;
+    background-color: white;
+    border: 4px solid #fad51c;
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #fad51c;
+}
+
+.timeline-content h3 {
+    margin: 0;
+}
+.my-fade-up {
+  animation:  0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust pixels for more or less travel */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container for your two header parts */
+.header-container {
+  flex-direction: row; /* Default: side-by-side for desktop */
+  align-items: center;
+  margin: auto;
+
+}
+
+  .header-container img {
+    max-width: 28%; /* Adjust size as needed */
+    margin-bottom: 1px; /* Adds space between stacked elements */
+  }
+@media screen and (max-width: 600px) and (min-width:200px){
+  h3{
+    font-size: 1.3rem;
+  }
+  h5{
+    font-size: 0.75rem;
+  }
+  /* Mobile-specific styles go here */
+    .header-container {
+    flex-direction: column; /* This stacks them one on top of the other */
+    text-align: center;      /* Centers the text and images */
+  }
+
+  /* Shrink images specifically for mobile */
+  .header-container img {
+    max-width: 25%; /* Adjust size as needed */
+    margin-bottom: 5px; /* Adds space between stacked elements */
+  }
+  body {
+    font-size: 12px;
+  }
+ 
+  .h-100{
+    height: 40% !important;
+  }
+  .display-3{
+    font-size:1rem;
+  }
+  .container {
+    width: 70%;
+  }
+  .bg-image{
+    height: 40% !important;
+  }
+}
+@media screen and (max-width: 900px) and (min-width:600px) {
+  h3{
+    font-size: 2.5rem;
+  }
+  h5{
+    font-size: 1.5rem;
+  }
+  /* Mobile-specific styles go here */
+    .header-container {
+
+    flex-direction: column; /* This stacks them one on top of the other */
+    text-align: center;      /* Centers the text and images */
+  }
+
+  /* Shrink images specifically for mobile */
+  .header-container img {
+    
+    max-width: 30%; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adds space between stacked elements */
+  }
+  body {
+    font-size: 14px;
+  }
+ 
+  .h-100{
+    height: 60% !important;
+  }
+  .display-3{
+    font-size:2rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .bg-image{
+    height: 50% !important;
+  }
+}
+@media screen and (max-width: 1060px) and (min-width: 900px) {
+  /* Mobile-specific styles go here */
+  h3{
+    font-size: 2.75rem;
+  }
+  h5{
+    font-size: 1.75rem;
+  }
+    .header-container {
+      position: relative;
+    flex-direction: column; /* This stacks them one on top of the other */
+    text-align: center;      /* Centers the text and images */
+  }
+
+  /* Shrink images specifically for mobile */
+  .header-container img {
+    max-width: 35%; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adds space between stacked elements */
+  }
+  body {
+    font-size: 12px;
+  }
+ 
+  .h-100{
+    height: 70% !important;
+  }
+  .display-3{
+    font-size: 4rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .bg-image{
+    height: 60% !important;
+  }
+}
