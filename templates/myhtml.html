@@ -1,1 +1,399 @@
+<!doctype html>
 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zainab Zaki Profile</title>
+  <meta name="description"
+    content="Computer Science tutor with 6+ years experience teaching Python, C++, SQL, DBMS, Computer Architecture, and IGCSE/A-Level students.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/x-icon" href="/static/logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="sticky-top">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#my-about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Testimonials
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/#my-testimonials">See Testimonials</a></li>
+                <li><a class="dropdown-item" href="/#my-test-form">Write a Testimonial</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/Courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#my-work">Work & Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#my-contact">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-{{ category }} text-white">
+        <strong class="me-auto">{{"Submitted" if category=="Success" else "Error"}} Message</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        {{ message }}
+      </div>
+    </div>
+    {% endfor %}
+    {% endwith %}
+  </div>
+  <section>
+    <div class="bg-image img-fluid "
+      style="background-image: linear-gradient(#FDDF33 ,#EBCD2F,#F2D637 ); height: 80vh;">
+      <div class="d-flex h-100 header-container">
+
+
+        <!-- <img src="{{values.myimage}}" class="w-auto" /> -->
+
+        <img src="/static/me-priv.png" class="w-auto" />
+
+
+        <div class="text-white align-items-center justify-content-center m-auto">
+          <h1 class="display-3 my-fade-up">Hello I'm <b>Zainab Zaki</b> </h1>
+          <h3 class="my-fade-up my-title">Computer Science Engineer & STEM Tutor
+          </h3>
+          <h5 class="my-fade-up my-subj">Python | IGCSE | A-Level | Programming Expert</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="my-about" class="justify-content-center align-items-center m-5">
+    <section class="mb5">
+      <h1 class="myh1">About Me</h1>
+      <p>
+        I am a Computer Science Engineer with a strong passion for both technology and education, with over six years of
+        teaching experience. I specialize in delivering high-quality instruction across a wide range of computer science
+        subjects, including Python, C++, JavaScript, SQL, MongoDB, Pseudocode, logic gates and web development.
+      </p>
+      <p>
+        I also provide in-depth support for advanced <mark>university courses</mark>, including Microprocessor-Based
+        System Design (MBSD), Computer Architecture, Computer Organization & Design, Operating Systems, Digital Logic
+        Design, and Database Management Systems (DBMS). I have strong command over low-level programming and
+        architectures, including 8086, 8051, MIPS, and RISC-V, making complex topics easier to understand through
+        step-by-step explanations and practical examples.
+      </p>
+
+      <p>
+        My academic background, combined with practical industry experience, allows me to bridge the gap between theory
+        and real-world application.
+      </p>
+
+      <p>
+        As a tutor, I follow a hands-on, student-centered teaching approach. I believe learners grasp concepts best when
+        they actively build, experiment, and solve problems. My methodology emphasizes clarity, structured progression,
+        and project-based learning to ensure students can confidently apply what they learn.
+      </p>
+
+      <p>
+        I have worked with diverse learners, including school students,<mark>IGCSE and A-Level</mark> learners, and
+        beginners entering the field of programming. I tailor my lessons according to individual learning styles and
+        academic goals, ensuring consistent progress and strong foundational understanding.
+      </p>
+
+      <p>
+        I continuously expand my technical expertise and stay updated with modern tools and technologies. My goal is to
+        empower students with the skills, confidence, and problem-solving mindset needed to succeed in the evolving
+        field of computer science.
+      </p>
+    </section>
+  </div>
+
+
+  <div id="my-testimonials" class=" justify-content-center align-items-center m-5">
+    <section class="mb5">
+      <h1 class="myh1">Testimonials </h1>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner mb-5">
+          {% for i in values.data.keys() %}
+          <div class="carousel-item active vh-10" data-bs-interval="2500" id="{{i}}">
+            <article class="bg-yellow align-items-center">
+              <div>
+                <h4>{{values.data[i][1]}}</h4>
+                <span>{{values.data[i][2]}} | {{values.data[i][3]}}</span>
+                <p>
+                  {{values.data[i][5]}}
+                </p>
+              </div>
+
+              <div class="justify-content-center align-items-center m-auto p-auto d-flex">
+                <p>
+                  {% for i in range(values.data[i][4]| int) %}
+                  <span class="fa fa-star checked"></span>
+                  {% endfor %}
+                  {% for i in range(5-values.data[i][4]| int) %}
+                  <span class="fa fa-star"></span>
+                  {% endfor %}
+                </p>
+              </div>
+            </article>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="my-test-form" class="justify-content-center align-items-center m-4">
+    <section class="mb4">
+      <div class="">
+        <h2 class="myh1">Submit Your Testimonial</h2>
+        <p>Please confirm your details before submitting ...</p>
+        <form method="POST" action="/">
+
+          <div class="form-group  w-95">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group  w-95">
+            <label for="level">Student Level</label>
+            <select class="form-control" id="level" name="level" required>
+              <option value="">-- Select your level --</option>
+              <option value="Programming Student">Programming Student</option>
+              <option value="IGCSE Student">IGCSE</option>
+              <option value="Agha Khan Board Student">Agha Khan Board</option>
+              <option value="AS-Level Student">AS Level</option>
+              <option value="A-Level Student">A Level</option>
+              <option value="University Student">University Student</option>
+              <option value="Student">Other Board Student</option>
+            </select>
+          </div>
+
+          <div class="form-group  w-95 ">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject"
+              placeholder="e.g. Python, DBMS, Mathematics" required>
+          </div>
+          <div class="form-group  w-95 ">
+            <label class="form-label">Rate your experience:</label>
+
+            <div class="star-rating" id="starRating">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <input type="hidden" id="rating" name="rating" />
+          </div>
+          <div class="form-group  w-95">
+            <label for="comments">Your Feedback</label>
+            <textarea class="form-control" id="comments" name="comments" rows="4"
+              placeholder="Write your testimonial here..." required></textarea>
+          </div>
+
+          <button type="submit" id="save-btn" class="btn my-btn m-4">
+            Submit Testimonial
+          </button>
+
+        </form>
+      </div>
+
+    </section>
+  </div>
+
+
+  <div id="my-work" class="container justify-content-center align-items-center m-5">
+    <section>
+      <h1 class="myh1">Work & Experience</h1>
+      <div class="timeline">
+        <!-- Entry 1 (Newest) -->
+        <section class="timeline-item">
+          <div class="timeline-date">2022 - Present</div>
+          <div class="timeline-content">
+            <h3>Professional Online Tutor</h3>
+            <p>Delivered hundreds of online sessions to school and university students
+              Specialized in Computer Science, Programming, Math & Science subjects</p>
+          </div>
+        </section>
+        <!-- Entry 2 -->
+        <section class="timeline-item">
+          <div class="timeline-date">2020 - 2021</div>
+          <div class="timeline-content">
+            <h3>Backend Developer Intern</h3>
+            <p>3DM Solutions (Karachi)</p>
+            <p>Worked as a <b>PHP Developer</b> Intern
+              Developed, tested, and debugged client-based applications</p>
+          </div>
+        </section>
+        <!-- Entry 2 -->
+        <section class="timeline-item">
+          <div class="timeline-date">2018 - 2022</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Computer Information & System Engineer </h3>
+            <p>Ned University</p>
+            <p>CGPA : 3.644</p>
+            <p>Courses i've Studied
+            <ul>
+              <li>MBSD (Microprocessor-Based System Design)</li>
+              <li>Computer Architecture & Organization
+              </li>
+              <li>Assembly Language Programming
+              </li>
+              <li>SQL & Database Management Systems (DBMS)</li>
+              <li>Artificial Intelligence & ML</li>
+            </ul>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div id="my-contact" class="m-5">
+          <section class="mb5">
+            <h1 class="myh1">Contact Details</h1>
+          </section>
+        </div>
+        <div class="justify-content-center align-items-center  m-5">
+          <section class="m-auto">
+            <div class="header-container justify-content-center align-items-center ">
+              <!-- gmail-->
+              <a class="p-2 img-fluid" href="mailto:zainabzakisheikh@gmail.com">
+                <svg height="50px" width="50px" viewBox="0 -31.5 256 256" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z"
+                        fill="#4285F4"> </path>
+                      <path
+                        d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z"
+                        fill="#34A853"> </path>
+                      <polygon fill="#EA4335"
+                        points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061">
+                      </polygon>
+                      <path
+                        d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z"
+                        fill="#FBBC04"> </path>
+                      <path
+                        d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z"
+                        fill="#C5221F"> </path>
+                    </g>
+                  </g>
+                </svg></a>
+              <!-- whtsapp-->
+              <a class="p-2 img-fluid" target="_blank" href="https://api.whatsapp.com/send?phone=923115988807">
+                <svg width="50px" height="50px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.384"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>Whatsapp-color</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs> </defs>
+                    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E">
+                        <path
+                          d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"
+                          id="Whatsapp"> </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <!-- hacker rank-->
+              <a class="p-2 img-fluid" target="_blank" href="https://www.hackerrank.com/profile/zainabzakisheikh">
+                <svg fill="#000000" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M 15.998047 3 C 14.225047 3 5.5352031 7.9839062 4.6582031 9.5039062 C 3.7802031 11.024906 3.7802031 20.983047 4.6582031 22.498047 C 5.5392031 24.017047 14.229047 29 15.998047 29 C 17.762047 29 26.451938 24.019953 27.335938 22.501953 C 28.222938 20.979953 28.222938 11.014047 27.335938 9.4980469 L 27.335938 9.4960938 C 26.444937 7.9790937 17.756047 3 15.998047 3 z M 15.996094 5.0117188 C 17.693094 5.3647187 24.417703 9.2167656 25.595703 10.509766 C 26.135703 12.150766 26.134703 19.844281 25.595703 21.488281 C 24.425703 22.779281 17.695094 26.636281 15.996094 26.988281 C 14.298094 26.638281 7.5723906 22.783234 6.4003906 21.490234 C 5.8653906 19.842234 5.8653906 12.155766 6.4003906 10.509766 C 7.5693906 9.2167656 14.297094 5.3617187 15.996094 5.0117188 z M 13 9 L 11 11 L 12 11 L 12 21 L 14 21 L 14 17 L 18 17 L 18 21 L 17 21 L 19 23 L 21 21 L 20 21 L 20 12 L 18 12 L 18 15 L 14 15 L 14 11 L 15 11 L 13 9 z">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+              <!--leetcode-->
+              <a class="p-2 img-fluid" target="_blank" href="https://leetcode.com/u/zainabzaki/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 32 32">
+                  <path
+                    d="M21.469 23.907l-3.595 3.473c-0.624 0.625-1.484 0.885-2.432 0.885s-1.807-0.26-2.432-0.885l-5.776-5.812c-0.62-0.625-0.937-1.537-0.937-2.485 0-0.952 0.317-1.812 0.937-2.432l5.76-5.844c0.62-0.619 1.5-0.859 2.448-0.859s1.808 0.26 2.432 0.885l3.595 3.473c0.687 0.688 1.823 0.663 2.536-0.052 0.708-0.713 0.735-1.848 0.047-2.536l-3.473-3.511c-0.901-0.891-2.032-1.505-3.261-1.787l3.287-3.333c0.688-0.687 0.667-1.823-0.047-2.536s-1.849-0.735-2.536-0.052l-13.469 13.469c-1.307 1.312-1.989 3.113-1.989 5.113 0 1.996 0.683 3.86 1.989 5.168l5.797 5.812c1.307 1.307 3.115 1.937 5.115 1.937 1.995 0 3.801-0.683 5.109-1.989l3.479-3.521c0.688-0.683 0.661-1.817-0.052-2.531s-1.849-0.74-2.531-0.052zM27.749 17.349h-13.531c-0.932 0-1.692 0.801-1.692 1.791 0 0.991 0.76 1.797 1.692 1.797h13.531c0.933 0 1.693-0.807 1.693-1.797 0-0.989-0.76-1.791-1.693-1.791z" />
+                </svg>
+              </a>
+              <!-- linkedin-->
+              <a class="p-2 img-fluid" target="_blank" href="https://www.linkedin.com/in/zainab-zaki-63a454219/">
+                <svg width="50px" height="50px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)" stroke="#000000" stroke-width="0.00032">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.128"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1"></rect>
+                    <path
+                      d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z"
+                      fill="white"></path>
+                    <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white"></path>
+                    <path
+                      d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z"
+                      fill="white"></path>
+                  </g>
+                </svg>
+              </a>
+
+              <!-- github-->
+              <a class="p-2 img-fluid" href="https://github.com/zainabzaki07" target="_blank"><img
+                  src="/static/icons8-github-64.png" style="height: 60px;width: 60px;"></img></a>
+              <!-- teacheron -->
+              <a class="p-2" href="https://www.teacheron.com/tutor/8b3I?r=8b3I" target="_blank"><img
+                  src="https://www.teacheron.com/resources/assets/img/badges/viewMyProfile.png"
+                  style="width: auto !important; height: 50px !important ;"></a>
+            </div>
+          </section>
+        </div>
+      </footer>
+
+      <script src="/static/myjava.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
