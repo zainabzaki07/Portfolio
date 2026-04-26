@@ -6,6 +6,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(BASE_DIR, 'portfolio.db')
+#for flash use only...
 app.secret_key = 'my_very_secret_key'
 def get_db_connection():
     conn = sqlite3.connect(db_path)
