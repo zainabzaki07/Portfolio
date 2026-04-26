@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect('portfolio.db')
+def query_db(query, args=(), one=False):
+    cur = conn.execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+users={}
+for user in query_db('select * from reviews'):
+    users[user[0]]=user
